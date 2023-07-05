@@ -12,5 +12,13 @@
 }
 
 .container {
-  @apply max-w-[95%] mx-auto;
+  @apply w-[95%] max-w-[1440px] mx-auto;
+}
+
+.grid-img {
+  @apply object-cover w-[350px];
+}
+
+.grid-img--p {
+  @apply max-w-[65%] uppercase px-4 py-8 absolute z-20 bottom-0 text-center text-white text-4xl font-light;
 }
