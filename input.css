@@ -6,7 +6,11 @@
   header {
     background: url("../images/desktop/image-hero.jpg");
     background-repeat: no-repeat;
-    min-height: 100vh;
-    max-width: 100%;
+    width: 100vw;
+    background-size: cover;
   }
+}
+
+.container {
+  @apply max-w-[95%] mx-auto;
 }
