@@ -579,6 +579,14 @@ header {
   bottom: 0px;
 }
 
+.-left-\[15vw\] {
+  left: -15vw;
+}
+
+.-left-\[12vw\] {
+  left: -12vw;
+}
+
 .col-span-1 {
   grid-column: span 1 / span 1;
 }
@@ -779,8 +787,7 @@ header {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 95%;
-  max-width: 1440px;
+  max-width: 95%;
 }
 
 .grid-img {

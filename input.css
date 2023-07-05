@@ -12,7 +12,7 @@
 }
 
 .container {
-  @apply w-[95%] max-w-[1440px] mx-auto;
+  @apply max-w-[95%] mx-auto;
 }
 
 .grid-img {
