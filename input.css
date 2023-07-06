@@ -17,9 +17,9 @@
 }
 
 .grid-img {
-  @apply object-cover w-[350px];
+  @apply object-cover object-right-top h-[200px] md:h-auto w-[550px]  md:w-[350px];
 }
 
 .grid-img--p {
-  @apply max-w-[65%] uppercase px-4 py-8 absolute z-20 bottom-0 text-center text-white text-4xl font-light;
+  @apply max-w-[65%] uppercase px-2 md:px-4 py-4 md:py-8 absolute z-20 bottom-0 text-center text-white text-4xl font-light;
 }
