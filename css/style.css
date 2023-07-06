@@ -426,6 +426,7 @@ header {
   background: url("../images/desktop/image-hero.jpg");
   background-repeat: no-repeat;
   width: 100vw;
+  min-height: 700px;
   background-size: cover;
 }
 
@@ -571,20 +572,12 @@ header {
   position: relative;
 }
 
-.-left-\[10vw\] {
-  left: -10vw;
+.-left-\[12vw\] {
+  left: -12vw;
 }
 
 .bottom-0 {
   bottom: 0px;
-}
-
-.-left-\[15vw\] {
-  left: -15vw;
-}
-
-.-left-\[12vw\] {
-  left: -12vw;
 }
 
 .col-span-1 {
@@ -601,6 +594,10 @@ header {
 
 .mb-8 {
   margin-bottom: 2rem;
+}
+
+.mt-12 {
+  margin-top: 3rem;
 }
 
 .mt-28 {
@@ -645,10 +642,6 @@ header {
 
 .items-center {
   align-items: center;
-}
-
-.justify-center {
-  justify-content: center;
 }
 
 .justify-between {
@@ -815,7 +808,26 @@ header {
 }
 
 @media (min-width: 768px) {
+  .md\:absolute {
+    position: absolute;
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:px-24 {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }

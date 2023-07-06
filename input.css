@@ -7,6 +7,7 @@
     background: url("../images/desktop/image-hero.jpg");
     background-repeat: no-repeat;
     width: 100vw;
+    min-height: 700px;
     background-size: cover;
   }
 }
