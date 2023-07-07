@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Loopstudios</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/script.js"></script>
   </head>
   <body class="text-gray-600">
     <header class="flex flex-col">
@@ -12,20 +13,22 @@
         class="p-10 text-white font-semibold flex justify-between items-center"
       >
         <p class="text-3xl">loopstudios</p>
-        <button class="md:hidden">
+        <button class="hamburger relative md:hidden">
           <img src="images/icon-hamburger.svg" alt="" />
         </button>
-        <ul class="hidden md:flex gap-8 justify-between items-center">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Support</a></li>
+        <ul
+          class="nav hidden fixed z-50 bg-black bg-opacity-70 p-28 md:p-0 md:bg-transparent flex-col justify-between items-center gap-16 top-[80px] right-0 md:static md:top-0 md:right-0 md:flex md:flex-row md:gap-8 md:justify-between md:items-center"
+        >
+          <li class="flex-1"><a href="#">About</a></li>
+          <li class="flex-1"><a href="#">Careers</a></li>
+          <li class="flex-1"><a href="#">Events</a></li>
+          <li class="flex-1"><a href="#">Products</a></li>
+          <li class="flex-1"><a href="#">Support</a></li>
         </ul>
       </nav>
       <div class="hero-text mt-12 py-20 mx-auto md:mx-0 md:px-12">
         <h1
-          class="text-white text-5xl uppercase border border-white max-w-[15ch] px-6 py-6 tracking-wide"
+          class="text-white text-5xl m-4 uppercase border border-white max-w-[15ch] px-6 py-6 tracking-wide"
         >
           Impressive experiences that deliver
         </h1>
