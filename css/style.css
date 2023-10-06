@@ -425,6 +425,7 @@ video {
 header {
   background: url("../images/desktop/image-hero.jpg");
   background-repeat: no-repeat;
+  background-position: center;
   width: 100vw;
   min-height: 700px;
   background-size: cover;
@@ -568,16 +569,8 @@ header {
   position: fixed;
 }
 
-.absolute {
-  position: absolute;
-}
-
 .relative {
   position: relative;
-}
-
-.sticky {
-  position: sticky;
 }
 
 .-left-\[12vw\] {
@@ -592,56 +585,8 @@ header {
   right: 0px;
 }
 
-.right-2 {
-  right: 0.5rem;
-}
-
-.top-4 {
-  top: 1rem;
-}
-
-.top-12 {
-  top: 3rem;
-}
-
-.top-\[50px\] {
-  top: 50px;
-}
-
-.top-\[150px\] {
-  top: 150px;
-}
-
-.top-\[100px\] {
-  top: 100px;
-}
-
-.top-\[750px\] {
-  top: 750px;
-}
-
-.top-\[75px\] {
-  top: 75px;
-}
-
 .top-\[80px\] {
   top: 80px;
-}
-
-.right-4 {
-  right: 1rem;
-}
-
-.right-8 {
-  right: 2rem;
-}
-
-.right-6 {
-  right: 1.5rem;
-}
-
-.right-5 {
-  right: 1.25rem;
 }
 
 .z-50 {
@@ -721,16 +666,12 @@ header {
   justify-content: space-between;
 }
 
-.gap-8 {
-  gap: 2rem;
-}
-
-.gap-4 {
-  gap: 1rem;
-}
-
 .gap-16 {
   gap: 4rem;
+}
+
+.gap-8 {
+  gap: 2rem;
 }
 
 .border {
@@ -751,22 +692,14 @@ header {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-opacity-30 {
-  --tw-bg-opacity: 0.3;
-}
-
-.bg-opacity-50 {
-  --tw-bg-opacity: 0.5;
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-70 {
@@ -779,10 +712,6 @@ header {
 
 .p-12 {
   padding: 3rem;
-}
-
-.p-6 {
-  padding: 1.5rem;
 }
 
 .p-28 {
@@ -883,20 +812,6 @@ header {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.transition-all {
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.duration-300 {
-  transition-duration: 300ms;
-}
-
-.duration-700 {
-  transition-duration: 700ms;
-}
-
 .duration-500 {
   transition-duration: 500ms;
 }
@@ -950,9 +865,18 @@ header {
   }
 }
 
-.hover\:bg-black:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+@media (min-width: 501px) {
+  header {
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    background: url("../images/mobile/image-hero.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 }
 
 .hover\:bg-gray-800:hover {
@@ -963,10 +887,6 @@ header {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.hover\:duration-700:hover {
-  transition-duration: 700ms;
 }
 
 @media (min-width: 768px) {
@@ -1003,10 +923,6 @@ header {
     max-width: 55ch;
   }
 
-  .md\:max-w-\[15ch\] {
-    max-width: 15ch;
-  }
-
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1033,14 +949,6 @@ header {
 
   .md\:bg-transparent {
     background-color: transparent;
-  }
-
-  .md\:bg-opacity-100 {
-    --tw-bg-opacity: 1;
-  }
-
-  .md\:bg-none {
-    background-image: none;
   }
 
   .md\:p-0 {
